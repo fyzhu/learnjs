@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ConstructorPattern</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script >
+        function Person(name,age,job) {
+            this.name=name;
+            this.age=age;
+            this.job=job;
+            this.sayName=function(){
+                console.log(this.name);
+                
+            }
+        }
+        var person1 = new Person('zhuyunfeng',27,'software engineer');
+        var person2=new Person('Yvan zhu',28,'developer')
+        person1.name='test';
+        console.log(person1.age);        
+        person1.sayName();
+        person2.sayName();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
