@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script >
+        function Person() {
+            
+        }
+        Person.prototype.name='nicholas';
+        Person.prototype.age=29;
+        Person.prototype.jog='software engineer';
+        Person.prototype.syaName=function(){
+            console.log(this.name);
+        };
+        var person1=new Person();
+        var person2=new Person();
+        person1.name='fyzhu';
+        console.log(person1.name)
+        console.log(person2.name)
+        console.log(person1.hasOwnProperty('name'))
+        delete person1.name;
+        console.log(person1.name)
+        console.log(person1.hasOwnProperty('name'))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
